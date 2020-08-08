@@ -111,15 +111,13 @@ header {
 
 .main-visual-img {
   width: 90%;
-  /* height: 125vw; */
-  height: calc(100vh - 280px);
+  height: 125vw;
   margin: 0;
   margin-left: 10%;
 }
 
 .main-visual-back-wrap {
   width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -127,18 +125,6 @@ header {
 
 .main-visual-back-wrap img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 0 0;
-}
-
-@media screen and (max-height: 760px) {
-  .main-visual-back-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: 0 0;
-  }
 }
 
 .main-visual-logo-wrap {
@@ -197,15 +183,6 @@ header {
   object-position: 0 0;
 }
 
-@media screen and (max-height: 670px) {
-  .main-visual-green-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: 0 0;
-  }
-}
-
 @keyframes main-nami-animation {
   0% {
     opacity: 0;
@@ -229,7 +206,6 @@ header {
   position: absolute;
   top: 0;
   left: -10%;
-  /* display: none; */
 }
 
 .main-visual-svg svg {
@@ -253,6 +229,62 @@ header {
 .backribbon-img-wrap {
   display: none;
 }
+
+/*iphone7,8等*/
+
+@media screen and (max-height: 670px) {
+  .main-visual-green-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 0 0;
+  }
+}
+@media screen and (max-height: 640px) {
+  .main-visual-svg {
+    left: -12%;
+  }
+}
+
+@media screen and (max-height: 760px) {
+  .main-visual-img {
+    width: 90%;
+    /* height: 125vw; */
+    height: calc(100vh - 280px);
+    margin: 0;
+    margin-left: 10%;
+  }
+  .main-visual-back-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .main-visual-back-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 0 0;
+  }
+  @keyframes main-nami-animation {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+      left: -1%;
+      z-index: 2;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+      width: 98%;
+      z-index: 2;
+    }
+  }
+}
+
 /*section*/
 
 section {
