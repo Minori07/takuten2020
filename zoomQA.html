@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 文字コード設定 -->
+    <meta charset="UTF-8" />
+
+    <!-- いろんなデバイス幅で表示崩れが起きないようにするやつ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ページタイトル -->
+    <title>卓展2020</title>
+
+    <!-- ページ情報 -->
+    <meta name="description" content="卓展2020のWEBサイト" />
+
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cluster.css" />
+    <link
+      rel="stylesheet"
+      media="(max-width: 480px)"
+      href="./css/mobile_css.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./rellax-master/rellax.min.js"></script>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-174896040-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-174896040-1");
+    </script>
+
+    <header>
+      <a href="index.html">
+        <div class="logo-img-wrap">
+          <img src="images/main-logo.svg" alt="卓展ロゴ" />
+        </div>
+      </a>
+      <ul class="header-nav-list">
+        <li>
+          <a href="#about">ABOUT</a>
+        </li>
+        <li>
+          <a href="#information">INFORMATION</a>
+        </li>
+        <li>
+          <a href="#exhibition">EXHIBITION</a>
+        </li>
+        <li>
+          <a href="#projects">PROJECTS</a>
+        </li>
+        <li>
+          <a href="#others">OTHERS</a>
+        </li>
+      </ul>
+      <div class="menu-info">
+        <p>
+          Tuesday,september 1st- <br />
+          sunday,september 27th,2020
+        </p>
+      </div>
+    </header>
+    <div class="menu-button" id="menu">
+      menu
+    </div>
+    <div class="menu-open">
+      <ul class="menu-open-nav-list">
+        <li>
+          <a href="index.html#jump-about">ABOUT</a>
+        </li>
+        <li>
+          <a href="index.html#jump-information">INFORMATION</a>
+        </li>
+        <li>
+          <a href="index.html#jump-exhibition">EXHIBITION</a>
+        </li>
+        <li>
+          <a href="index.html#jump-projects">PROJECTS</a>
+        </li>
+        <li>
+          <a href="index.html#jump-others">OTHERS</a>
+        </li>
+        <div class="menu-sns">
+          <a href="https://www.instagram.com/takuten2020/">
+            <div class="sns-icon-wrap">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-instagram"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                stroke-width="1.7"
+                stroke="#3E3A39"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+            </div>
+          </a>
+          <a href="https://twitter.com/takuten_geikou">
+            <div class="sns-icon-wrap">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-twitter"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                stroke-width="1.7"
+                stroke="#3E3A39"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497 -3.753C20.18 7.773 21.692 5.25 22 4.009z"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </ul>
+    </div>
+    <div class="zoomQA-mainvisual-wrap">
+      <img src="images/banner.jpg" alt="" />
+    </div>
+    <section class="others-QA">
+      <div class="section-heading">
+        <h5>others</h5>
+        <h2>
+          芸工 zoom 質問会
+        </h2>
+        <p>9/12 sat.</p>
+      </div>
+      <div class="QA-caption">
+        <p>
+          「芸工ってどんなところ？」「どんな勉強をしているの？」などなど、
+          <br />
+          受験生のみなさんの素朴なギモンに現役の芸工生がzoomでお答えします！
+          <br />
+          学生だからこそ分かるリアルな情報や、進路のことなど盛り沢山の1時間！
+          <br />
+          ざっくばらんにお話ししましょう！
+        </p>
+        <a href="">
+          <div class="black-box"></div>
+          <div class="link-block">
+            予約する
+            <div class="right">
+              <img src="images/right.svg" alt="" />
+              <img
+                src="images/white_right.svg"
+                class="right-white-cover"
+                alt=""
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-logo-img-wrap">
+        <img src="images/main-logo.svg" alt="卓展ロゴ" />
+      </div>
+      <div class="sns">
+        <a href="https://www.instagram.com/takuten2020/">
+          <div class="sns-icon-wrap">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-instagram"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.7"
+              stroke="#3E3A39"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <rect x="4" y="4" width="16" height="16" rx="4" />
+              <circle cx="12" cy="12" r="3" />
+              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+            </svg>
+          </div>
+        </a>
+        <a href="https://twitter.com/takuten_geikou">
+          <div class="sns-icon-wrap">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-twitter"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.7"
+              stroke="#3E3A39"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <path
+                d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497 -3.753C20.18 7.773 21.692 5.25 22 4.009z"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="share-button">
+        <a
+          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+          class="twitter-share-button"
+          data-text="芸工zoom質問会に参加しよう！"
+          data-show-count="false"
+          >Tweet</a
+        >
+      </div>
+      <p>©️2020 卓展</p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
