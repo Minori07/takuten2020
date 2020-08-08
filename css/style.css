@@ -92,12 +92,6 @@ header {
   visibility: hidden;
 }
 
-@media screen and(max-width: 770px) {
-  .menu-info {
-    transform: scale(0.8);
-  }
-}
-
 .menu-button {
   display: none;
   font-family: "comodo";
@@ -486,6 +480,8 @@ section {
   border: solid 1px #3e3a39;
   width: 18vw;
   height: 18vw;
+  min-width: 160px;
+  min-height: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -528,7 +524,7 @@ section {
   display: flex;
   font-size: 11px;
   position: relative;
-  left: 50px;
+  left: 20%;
   align-items: center;
 }
 
@@ -725,7 +721,7 @@ footer {
   padding: 30px 40px;
   position: absolute;
   width: 80%;
-  margin: 10%;
+  margin: 150px 10%;
   max-height: calc(100vh - 210px);
   overflow-y: auto;
 }
@@ -733,18 +729,31 @@ footer {
   position: fixed;
 }
 
-.modal-logo-wrap {
+.modal-left-fixed {
+  position: fixed;
+  top: 250px;
+  left: 20%;
+  width: 22%;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 24px;
+}
+
+/* .modal-logo-wrap {
   width: 15%;
   position: fixed;
   top: 30%;
   left: 20%;
+} */
+
+.modal-logo-wrap {
+  width: 70%;
 }
 
 .modal-logo-wrap img {
   width: 100%;
 }
-
-.modal-taku-caption {
+/* .modal-taku-caption {
   margin-left: 37%;
   margin-top: calc(10vh - 30px);
   font-size: 13px;
@@ -752,22 +761,31 @@ footer {
   line-height: 28px;
   width: 50%;
   position: static;
+} */
+
+.modal-taku-caption {
+  margin-left: 45%;
+  width: 50%;
 }
 
 .modal-taku-name {
   display: flex;
   align-items: baseline;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin: 20px 0;
 }
 
 .modal-taku-name h3 {
-  font-size: 23px;
+  /* font-size: 23px; */
+  font-size: 17px;
   font-weight: 500;
 }
 
 .modal-taku-name p {
-  font-size: 12px;
-  margin-left: 25px;
+  /* font-size: 12px; */
+  font-size: 11px;
+  /* margin-left: 25px; */
+  margin-left: 5%;
 }
 
 .modal-photo-list {
@@ -787,4 +805,34 @@ footer {
 
 .modal-photo-right {
   margin-top: 30px;
+}
+
+/*ipad*/
+
+@media screen and (max-width: 880px) {
+  .menu-info {
+    transform: scale(0.8);
+  }
+  .header-nav-list li {
+    font-size: 10px;
+  }
+
+  .modal-left-fixed {
+    position: fixed;
+    top: 230px;
+    left: 20%;
+    width: 22%;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    line-height: 20px;
+  }
+  .modal-taku-name h3 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .modal-taku-name p {
+    font-size: 10px;
+    margin-left: 5%;
+    line-height: 12px;
+  }
 }

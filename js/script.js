@@ -89,6 +89,12 @@ $(function () {
       menu.innerHTML = "close";
       $(".menu-button").css({ "background-color": "#f0ede5" });
       mopen = true;
+      // 繰り返し処理
+      $(".menu-open-nav-list li").each(function (i) {
+        $(this)
+          .delay(i * 100)
+          .animate({ transform: "translate(0, 0)", opacity: 1 }, 1000);
+      });
       return false;
     }
     if (mopen) {
@@ -97,6 +103,9 @@ $(function () {
       menu.innerHTML = "menu";
       $(".menu-button").css({ "background-color": "white" });
       mopen = false;
+      $(".menu-open-nav-list li").each(function (i) {
+        $(this).animate({ transform: "translate(0, 50px)", opacity: 0 }, 1000);
+      });
       return false;
     }
   });
