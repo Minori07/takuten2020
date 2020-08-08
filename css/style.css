@@ -5,19 +5,19 @@
 }
 
 @font-face {
-  font-family: "antique";
-  src: url(font/ShipporiAntique-Medium.otf);
-  font-weight: 400;
+  font-family: "shippori";
+  src: url(../font/ShipporiAntique-Medium.otf);
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "comodo";
-  src: url(font/Comodo\Regular.otf); /*Regularの前にスペース必要*/
+  src: url(../font/Comodo\ Regular.otf); /*Regularの前にスペース必要*/
   font-weight: 400;
 }
 
 body {
-  font-family: "antique";
+  font-family: "shippori";
   color: #3e3a39;
 }
 
