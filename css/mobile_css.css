@@ -238,7 +238,7 @@ header {
 }
 
 /*iphone7,8等*/
-
+/* 
 @media screen and (max-height: 160vw) {
   .main-visual-green-wrap {
     width: 100%;
@@ -250,24 +250,7 @@ header {
     object-fit: contain;
     object-position: 0 0;
   }
-  @keyframes main-nami-animation {
-    0% {
-      opacity: 0;
-    }
-    90% {
-      opacity: 0;
-      left: -1%;
-      z-index: 2;
-    }
-    100% {
-      opacity: 1;
-      left: 0;
-      width: 98%;
-      height: 100%;
-      z-index: 2;
-    }
-  }
-}
+} */
 @media screen and (max-height: 640px) {
   .main-visual-svg {
     left: -12%;
@@ -298,6 +281,23 @@ header {
     height: 100%;
     object-fit: contain;
     object-position: 0 0;
+  }
+  @keyframes main-nami-animation {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+      left: -1%;
+      z-index: 2;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+      width: 98%;
+      height: 100%;
+      z-index: 2;
+    }
   }
 }
 
