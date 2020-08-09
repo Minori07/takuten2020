@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "comodo";
-  src: url(../font/Comodo\ Regular.otf); /*Regularの前にスペース必要*/
+  src: url(../font/Comodo\Regular.otf); /*Regularの前にスペース必要*/
   font-weight: 400;
 }
 
@@ -214,7 +214,7 @@ header {
   top: 0;
   left: 8px;
   width: 95%;
-  opacity: 0;
+  opacity: 1;
   z-index: 0;
   animation: main-nami-animation 4s ease-in alternate forwards;
 }
@@ -270,7 +270,7 @@ header {
   width: 97%;
   height: 98.5%;
   z-index: 3;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .main-visual-svg svg {
@@ -497,6 +497,7 @@ section {
   height: 40%;
   margin: 25px 0 15px 0;
   position: relative;
+  transition: all 0.3s;
 }
 
 .venue-img-wrap img {
@@ -518,6 +519,30 @@ section {
 
 .venue-hover a:hover .venue-img-cover-wrap {
   opacity: 1;
+}
+.venue-hover a:hover .venue-img-wrap {
+  animation: bounce-animation 0.5s;
+}
+@keyframes bounce-animation {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.venu a:hover {
+  border-color: #98d1ec;
 }
 
 .venue-go {

@@ -1,7 +1,13 @@
-@media screen and (min-height: 800px) {
+/* @media screen and (min-height: 800px) {
   body {
-    /* margin-top: 50px; */
+    margin-top: 50px;
   }
+} */
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
 }
 
 header {
@@ -420,6 +426,7 @@ footer {
   top: 80px;
   width: 75vw;
   height: 43vw;
+  margin-top: 0;
 }
 
 .exhibition-cluster {
