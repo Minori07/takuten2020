@@ -140,6 +140,6 @@ if (!sessionStorage.getItem(keyName)) {
   $(".main-visual-logo-wrap").css({ animation: "none" });
 }
 
-var greet = document.getElementById("greet");
-var size = screen.width + "," + screen.height;
-greet.innerHTML = size;
+// var greet = document.getElementById("greet");
+// var size = screen.width + "," + screen.height;
+// greet.innerHTML = size;
