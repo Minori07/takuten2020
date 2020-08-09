@@ -161,12 +161,8 @@ class Canvas {
       uniform int u_id;
 
       void main() {
-        // 余白ができないようにアスペクト補正
-        v_uv = uv - .5;
-        v_uv.y *= u_FixAspect;
-        v_uv += .5;
-
-
+        v_uv = uv;
+        
         vec3 pos = position;
         float freq = 2.0; //振動数
         float amp = 0.6; //振幅
@@ -183,17 +179,16 @@ class Canvas {
       varying vec2 v_uv;  
       uniform sampler2D u_tex;
       void main(){
-        vec3 color = texture2D(u_tex,v_uv).rgb;
-        gl_FragColor = vec4(color, 0.26);
-        // gl_FragColor = texture2D(u_tex, v_uv);
+        vec4 color = texture2D(u_tex,v_uv);
+        gl_FragColor = vec4(color);
       }
       `;
 
     const geo = new THREE.PlaneBufferGeometry(2, 1, 100, 100);
 
-    var nposY = [-0, -2.0, -3.8, -4.0, -7.0, -10.0];
-    if (this.w < 480) {
-      nposY = [-1.0, -2.0, -3.5, -3.8, -5.0, -7.0];
+    var nposY = [-0, -2.0, -3.8, -4.0, -7.3, -10.0];
+    if (window.innerWidth < 480) {
+      nposY = [-0.9, -2.0, -3.2, -3.4, -5.3, -7.0];
     }
 
     // 波のグループ作成

@@ -304,6 +304,15 @@ header {
   }
 }
 
+@media screen and (min-height: 800px) {
+  .mobile-main-caption {
+    top: calc(100vh - 300px);
+  }
+  .main-visual-scroll {
+    top: 74vh;
+  }
+}
+
 /*section*/
 
 section {

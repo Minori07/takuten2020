@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "comodo";
-  src: url(../font/Comodo\ Regular.otf); /*Regularの前にスペース必要*/
+  src: url(../font/Comodo\Regular.otf); /*Regularの前にスペース必要*/
   font-weight: 400;
 }
 
@@ -293,7 +293,6 @@ header {
   stroke-dasharray: 5000;
   stroke-dashoffset: 5000;
   fill: none;
-  visibility: visible;
   animation: main-animation 4s ease-in alternate forwards;
 }
 
@@ -929,5 +928,5 @@ footer {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 0;
+  z-index: -1;
 }

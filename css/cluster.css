@@ -10,7 +10,9 @@ header {
   width: 75vw;
   height: 42vw;
   margin: auto;
-  margin-top: 50px;
+  position: relative;
+  top: 100px;
+  margin-bottom: 100px;
 }
 
 .cluster-main-visual-wrap img {
@@ -162,6 +164,9 @@ td {
 .zoomQA-mainvisual-wrap {
   width: 70%;
   margin: auto;
+  position: relative;
+  top: 100px;
+  margin-bottom: 100px;
 }
 
 .zoomQA-mainvisual-wrap img {
