@@ -4,6 +4,9 @@ class Canvas {
     this.w = window.innerWidth;
     this.h = window.innerHeight;
 
+    this.minW = 700;
+    if (this.w < this.minW) this.w = this.minW;
+
     //スクロール量
     this.scrollY = 0;
 
@@ -261,15 +264,15 @@ class Canvas {
     const width = window.innerWidth;
     const height = window.innerHeight;
 
-    if (width < 700) return; //波が縮まりすぎるのでこれらいを最小幅にする
+    // カメラのアスペクト比を正す
+    this.camera.aspect = width / height;
+    this.camera.updateProjectionMatrix();
+
+    if (width < this.minW) return; //波が縮まりすぎるのでこれらいを最小幅にする
 
     // レンダラーのサイズを調整する
     this.renderer.setPixelRatio(window.devicePixelRatio); // ピクセル比
     this.renderer.setSize(width, height); // 描画サイズ
-
-    // カメラのアスペクト比を正す
-    this.camera.aspect = width / height;
-    this.camera.updateProjectionMatrix();
   }
 }
 
