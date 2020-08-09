@@ -557,7 +557,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 10%;
   transition: all 0.3s;
 }
 .venue h3 {
@@ -567,7 +568,6 @@ section {
 
 .venue-img-wrap {
   height: 40%;
-  margin: 25px 0 15px 0;
   position: relative;
   transition: all 0.3s;
 }
