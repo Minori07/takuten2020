@@ -287,14 +287,14 @@ header {
   animation: main-animation 4s ease-in alternate forwards;
 }
 
-.st1 {
+/* .st1 {
   stroke: #ab9166;
   fill: none;
   stroke-width: 0.5;
   stroke-dasharray: 5000;
   stroke-dashoffset: 500;
   animation: main-animation 4s ease-in alternate forwards;
-}
+} */
 
 @keyframes main-animation {
   0% {
@@ -313,6 +313,78 @@ header {
   100% {
     stroke-dashoffset: 0;
     opacity: 0;
+  }
+}
+
+@-moz-keyframes main-animation {
+  0% {
+    stroke-dashoffset: 5000;
+    fill: none;
+    visibility: visible;
+  }
+  80% {
+    fill: transparent;
+    opacity: 1;
+  }
+  90% {
+    fill: transparent;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes main-animation {
+  0% {
+    stroke-dashoffset: 5000;
+    fill: none;
+    visibility: visible;
+  }
+  80% {
+    fill: transparent;
+    opacity: 1;
+  }
+  90% {
+    fill: transparent;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+@-o-keyframes main-animation {
+  0% {
+    stroke-dashoffset: 5000;
+    fill: none;
+    visibility: visible;
+  }
+  80% {
+    fill: transparent;
+    opacity: 1;
+  }
+  90% {
+    fill: transparent;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+@-ms-keyframes main-animation {
+  0% {
+    stroke-dashoffset: 3000;
+    fill: none;
+    visibility: visible;
+  }
+  70% {
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #655554;
   }
 }
 
