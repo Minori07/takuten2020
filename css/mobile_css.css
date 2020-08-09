@@ -295,7 +295,7 @@ header {
 
 section {
   width: 75%;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .section-heading {
@@ -366,6 +366,7 @@ section {
 .venue a {
   width: 100%;
   height: 180px;
+  padding: 5%;
 }
 
 .venue h3 {

@@ -139,3 +139,7 @@ if (!sessionStorage.getItem(keyName)) {
   $(".top-blank").css({ animation: "none" });
   $(".main-visual-logo-wrap").css({ animation: "none" });
 }
+
+var greet = document.getElementById("greet");
+var size = screen.width + "," + screen.height;
+greet.innerHTML = size;
