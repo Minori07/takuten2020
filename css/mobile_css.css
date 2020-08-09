@@ -108,7 +108,7 @@ header {
 .mobile-main-caption {
   display: block;
   position: absolute;
-  top: calc(100vh - 240px);
+  top: calc(100vh - 270px);
   width: 60%;
   font-size: 11px;
   line-height: 6vw;
@@ -306,10 +306,10 @@ header {
 
 @media screen and (min-height: 800px) {
   .mobile-main-caption {
-    top: calc(100vh - 300px);
+    top: 63vh;
   }
   .main-visual-scroll {
-    top: 74vh;
+    top: 70vh;
   }
 }
 

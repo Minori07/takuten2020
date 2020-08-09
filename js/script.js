@@ -1,8 +1,3 @@
-// var rellax = new Rellax(" .rellax ", {
-//   // 中央寄せ
-//   center: true,
-// });
-
 $(function () {
   var style = '<link rel="stylesheet" href="./css/style.css">';
   var mstyle = '<link rel="stylesheet" href="./css/mobile_css.css">';
