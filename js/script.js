@@ -1,7 +1,7 @@
-var rellax = new Rellax(" .rellax ", {
-  // 中央寄せ
-  center: true,
-});
+// var rellax = new Rellax(" .rellax ", {
+//   // 中央寄せ
+//   center: true,
+// });
 
 var headNav = $("header");
 
@@ -122,6 +122,17 @@ $(function () {
   });
 });
 
+var bg = $("#loader-bg"),
+  loader = $("#loader");
+/* ローディング画面の非表示を解除 */
+bg.removeClass("is-hide");
+loader.removeClass("is-hide");
+
+/* 読み込み完了 */
+
+/* 10秒経ったら強制的にローディング画面を非表示にする */
+setTimeout("stopload()", 10000);
+
 //初回のみアニメーション
 const keyName = "visited";
 const keyValue = true;
@@ -132,10 +143,47 @@ if (!sessionStorage.getItem(keyName)) {
   $("html,body").animate({ scrollTop: 0, scrollLeft: 0 }, "1");
   //ここに初回アクセス時の処理
   console.log("初めての訪問です");
+  $(window).on("load", stopload);
 } else {
   //ここに通常アクセス時の処理
   console.log("訪問済みです");
+  bg.fadeOut(800);
+  loader.fadeOut(300);
+  $(".main-visual-green-wrap").css({
+    animation: " main-nami-animation 4s ease-in alternate forwards",
+  });
+  $("svg .st0").css({
+    animation: "main-animation 4s ease-in alternate forwards",
+  });
+  $("svg .st1").css({
+    animation: "main-animation 4s ease-in alternate forwards",
+  });
   $("header").css({ animation: "none" });
   $(".top-blank").css({ animation: "none" });
   $(".main-visual-logo-wrap").css({ animation: "none" });
+}
+
+/* ローディング画面を非表示にする処理 */
+function stopload() {
+  bg.fadeOut(800);
+  loader.fadeOut(300);
+  console.log("ok");
+  $("header").css({
+    animation: "header-first-animation 5s ease-in alternate forwards",
+  });
+  $(".top-blank").css({
+    animation: "blank-animation 5s ease-in alternate forward",
+  });
+  $(".main-visual-logo-wrap").css({
+    animation: "main-logo-animation 6s ease-in alternate forwards",
+  });
+  $(".main-visual-green-wrap").css({
+    animation: " main-nami-animation 4s ease-in alternate forwards",
+  });
+  $("svg .st0").css({
+    animation: "main-animation 4s ease-in alternate forwards",
+  });
+  $("svg .st1").css({
+    animation: "main-animation 4s ease-in alternate forwards",
+  });
 }

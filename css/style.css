@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "comodo";
-  src: url(../font/Comodo\Regular.otf); /*Regularの前にスペース必要*/
+  src: url(../font/Comodo\ Regular.otf); /*Regularの前にスペース必要*/
   font-weight: 400;
 }
 
@@ -37,7 +37,8 @@ header {
   align-items: center;
   position: absolute;
   z-index: 3;
-  animation: header-first-animation 5s ease-in alternate forwards;
+  /* animation: header-first-animation 5s ease-in alternate forwards; */
+  animation: none;
 }
 
 @keyframes header-first-animation {
@@ -166,7 +167,8 @@ header {
   left: 1.2vw;
   width: 20%;
   z-index: 2;
-  animation: main-logo-animation 6s ease-in alternate forwards;
+  /* animation: main-logo-animation 6s ease-in alternate forwards; */
+  animation: none;
 }
 
 .main-visual-logo-wrap img {
@@ -216,7 +218,8 @@ header {
   width: 95%;
   opacity: 1;
   z-index: 0;
-  animation: main-nami-animation 4s ease-in alternate forwards;
+  /* animation: main-nami-animation 4s ease-in alternate forwards; */
+  animation: none;
 }
 
 .main-visual-green-wrap img {
@@ -245,7 +248,8 @@ header {
   height: 100vh;
   background-color: #f0ede5;
   z-index: 1;
-  animation: blank-animation 5s ease-in alternate forwards;
+  /* animation: blank-animation 5s ease-in alternate forwards; */
+  animation: none;
   visibility: hidden;
 }
 
@@ -284,7 +288,8 @@ header {
   stroke-width: 0.5;
   stroke-dasharray: 5000;
   stroke-dashoffset: 500;
-  animation: main-animation 4s ease-in alternate forwards;
+  /* animation: main-animation 4s ease-in alternate forwards; */
+  animation: none;
 }
 
 .st1 {
@@ -293,7 +298,8 @@ header {
   stroke-width: 0.5;
   stroke-dasharray: 5000;
   stroke-dashoffset: 500;
-  animation: main-animation 4s ease-in alternate forwards;
+  /* animation: main-animation 4s ease-in alternate forwards; */
+  animation: none;
 }
 
 @keyframes main-animation {
@@ -664,6 +670,11 @@ section {
 .banner-wrap {
   margin-top: 30px;
   width: 70%;
+  transition: all 0.3s;
+}
+
+.banner-wrap:hover {
+  opacity: 0.7;
 }
 
 .banner-wrap img {
@@ -861,3 +872,32 @@ footer {
     line-height: 12px;
   }
 }
+
+/*loading*/
+#loader-bg {
+  background: #ffffff;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+#loader {
+  height: 120px;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -60px;
+  position: fixed;
+  top: 50%;
+  width: 120px;
+}
+#loader p {
+  color: #454545;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: center;
+}
+/* #loader p img {
+  display: inline-block;
+} */
