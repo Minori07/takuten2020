@@ -257,13 +257,19 @@ header {
   }
 }
 
-@media screen and (max-height: 760px) {
+@media screen and (max-height: 670px) {
   .main-visual-img {
     width: 90%;
     /* height: 125vw; */
     height: calc(100vh - 280px);
     margin: 0;
     margin-left: 10%;
+  }
+
+  .main-visual-logo-wrap {
+    width: 17vw;
+    left: 3%;
+    bottom: 2%;
   }
 
   .main-visual-back-wrap img {
