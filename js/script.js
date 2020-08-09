@@ -3,6 +3,15 @@
 //   center: true,
 // });
 
+$(function () {
+  var style = '<link rel="stylesheet" href="./css/style.css">';
+  var mstyle = '<link rel="stylesheet" href="./css/mobile_css.css">';
+  $("head link:last").after(style);
+  if (screen.width < 480) {
+    $("head link:last").after(mstyle);
+  }
+});
+
 var headNav = $("header");
 
 if (screen.width > 480) {

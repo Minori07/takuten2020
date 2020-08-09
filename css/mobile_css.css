@@ -101,11 +101,12 @@ header {
   height: auto;
 }
 
-.mainribbon-img-wrap {
+.pc-main-caption {
   display: none;
 }
 
-.main-caption {
+.mobile-main-caption {
+  display: block;
   position: absolute;
   top: calc(100vh - 240px);
   width: 60%;
@@ -231,10 +232,6 @@ header {
 .main-visual-scroll p {
   font-size: 10px;
   transform: scale(0.8);
-}
-
-.backribbon-img-wrap {
-  display: none;
 }
 
 /*iphone7,8等*/

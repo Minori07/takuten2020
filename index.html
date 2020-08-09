@@ -33,6 +33,7 @@
       src="https://platform.twitter.com/widgets.js"
       charset="utf-8"
     ></script>
+    <script src="./lib/three.min.js"></script>
   </head>
 
   <body>
@@ -50,6 +51,8 @@
 
       gtag("config", "UA-174896040-1");
     </script> -->
+
+    <div id="canvas-container"></div>
 
     <header>
       <a href="#top">
@@ -151,11 +154,17 @@
     </div>
     <div class="top-blank"></div>
     <div class="main-visual" id="top">
-      <div class="mainribbon-img-wrap">
-        <img src="images/ribbon-main.svg" alt="" />
-      </div>
       <div class="main-caption">
-        <p>
+        <p class="pc-main-caption">
+          様々なプロジェクトを中心とし、<br />
+          メンバーが皆で一つの卓を囲むように<br />
+          集い、考え、制作する。<br />
+          それがこの「卓展」という名前の由来です。<br />
+          時代の潮流が変化しても、<br />
+          私たちはあらゆる方法で卓を囲み、考え、<br />
+          制作することをやめません。
+        </p>
+        <p class="mobile-main-caption">
           様々なプロジェクトを中心とし、メンバーが皆で一つの卓を囲むように集い、考え、制作する。<br />
           それがこの「卓展」という名前の由来です。<br />
           時代の潮流が変化しても、私たちはあらゆる方法で卓を囲み、考え、制作することをやめません。
@@ -182,11 +191,6 @@
             style="enable-background: new 0 0 621.8 769;"
             xml:space="preserve"
           >
-            <style type="text/css">
-              .st0 {
-                fill: #ab9166;
-              }
-            </style>
             <g>
               <path
                 class="st0"
@@ -338,21 +342,6 @@
       </div>
     </div>
 
-    <div class="backribbon-img-wrap r-1">
-      <img src="images/ribbon1.svg" alt="" />
-    </div>
-    <div class="backribbon-img-wrap r-2">
-      <img src="images/ribbon2.svg" alt="" />
-    </div>
-    <div class="backribbon-img-wrap r-3">
-      <img src="images/ribbon3.svg" alt="" />
-    </div>
-    <div class="backribbon-img-wrap r-4">
-      <img src="images/ribbon4.svg" alt="" />
-    </div>
-    <div class="backribbon-img-wrap r-5">
-      <img src="images/ribbon5.svg" alt="" />
-    </div>
     <a name="jump-about"></a>
     <section class="about" id="about">
       <div class="section-heading">
@@ -1227,6 +1216,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
   </body>
-  <script src="./js/script.js"></script>
 </html>

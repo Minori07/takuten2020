@@ -118,12 +118,21 @@ header {
 }
 
 .main-caption {
-  width: 20%;
-  margin: 15%;
-  font-size: 12px;
-  /* letter-spacing: 0.05em; */
-  line-height: 2.5vw;
+  width: 50%;
+}
+
+.pc-main-caption {
   margin: auto;
+  margin-top: 40%;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  line-height: 2.5vw;
+}
+
+.mobile-main-caption {
+  display: none;
 }
 
 .mainribbon-img-wrap {
@@ -280,10 +289,11 @@ header {
 
 .st0 {
   stroke: #ab9166;
-  fill: none;
-  stroke-width: 0.5;
+  stroke-width: 1px;
   stroke-dasharray: 5000;
-  stroke-dashoffset: 500;
+  stroke-dashoffset: 5000;
+  fill: none;
+  visibility: visible;
   animation: main-animation 4s ease-in alternate forwards;
 }
 
@@ -487,6 +497,7 @@ section {
 .movie iframe {
   width: 45vw;
   height: 27vw;
+  z-index: 1;
 }
 
 .info-contents li {
@@ -711,7 +722,7 @@ section {
 }
 
 .taku-hover-caption h3 {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.05em;
   line-height: 15px;
@@ -775,37 +786,6 @@ footer {
   position: absolute;
   top: 50px;
   right: 40px;
-}
-
-/* リボン */
-
-.backribbon-img-wrap {
-  position: absolute;
-  width: 100vw;
-}
-
-.backribbon-img-wrap img {
-  width: 100%;
-}
-
-.r-1 {
-  top: calc(100vh + 320px);
-}
-
-.r-2 {
-  top: calc(100vh + 1050px);
-}
-
-.r-3 {
-  top: calc(100vh + 1100px);
-}
-
-.r-4 {
-  top: calc(100vh + 2850px);
-}
-
-.r-5 {
-  top: calc(100vh + 4100px);
 }
 
 /*modal*/
@@ -943,4 +923,11 @@ footer {
     margin-left: 5%;
     line-height: 12px;
   }
+}
+
+#canvas-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
 }
