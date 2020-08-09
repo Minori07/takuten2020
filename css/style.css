@@ -36,7 +36,7 @@ header {
   display: flex;
   align-items: center;
   position: absolute;
-  z-index: 3;
+  z-index: 5;
   animation: header-first-animation 5s ease-in alternate forwards;
 }
 
@@ -174,7 +174,7 @@ header {
   bottom: 3.3vw;
   left: 1.2vw;
   width: 20%;
-  z-index: 2;
+  z-index: 3;
   animation: main-logo-animation 6s ease-in alternate forwards;
 }
 
@@ -653,8 +653,10 @@ section {
 
 .taku-list li {
   margin: 0 50px 80px 0;
-  width: 230px;
-  height: 220px;
+  width: 17vw;
+  min-width: 200px;
+  height: 16vw;
+  min-height: 190px;
   position: relative;
 }
 .taku-caption {
