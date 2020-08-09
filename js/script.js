@@ -7,6 +7,13 @@ $(function () {
   }
 });
 
+let client_h = $(".main-visual-img").height() + 20;
+console.log(client_h);
+var m_top = client_h + "px";
+$(".mobile-main-caption").css({ top: m_top });
+var m_bottom = $(".main-visual-img").bottom();
+var s_top = window.height - m_bottom + "px";
+
 var headNav = $("header");
 
 if (screen.width > 480) {
@@ -29,6 +36,7 @@ if (screen.width > 480) {
     }
   });
 } else {
+  $(".main-visual-scroll").css({ bottom: m_top });
   //scrollだけだと読み込み時困るのでloadも追加
   $(window).on("load scroll", function () {
     //現在の位置が500px以上かつ、クラスfixedが付与されていない時
