@@ -239,7 +239,7 @@ header {
 
 /*iphone7,8等*/
 
-@media screen and (max-height: 178vw) {
+@media screen and (max-height: 160vw) {
   .main-visual-green-wrap {
     width: 100%;
     height: 100%;
@@ -284,6 +284,16 @@ header {
   }
 
   .main-visual-back-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 0 0;
+  }
+  .main-visual-green-wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .main-visual-green-wrap img {
     width: 100%;
     height: 100%;
     object-fit: contain;
