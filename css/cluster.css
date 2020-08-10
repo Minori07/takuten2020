@@ -117,7 +117,8 @@ td {
 
 .cluster-link-box {
   border: solid 1px #3e3a39;
-  width: 550px;
+  width: 60vw;
+  max-width: 550px;
   height: 120px;
   margin: 50px 40px;
   display: flex;

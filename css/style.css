@@ -514,6 +514,10 @@ section {
   margin-right: 30px;
 }
 
+.info-contents a {
+  text-decoration: underline;
+}
+
 .sns {
   display: flex;
 }
