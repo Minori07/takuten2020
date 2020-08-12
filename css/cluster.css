@@ -151,6 +151,7 @@ td {
 .cluster-link-img-wrap {
   width: 170px;
   height: 100%;
+  overflow: hidden;
   border-left: solid 1px #3e3a39;
 }
 
@@ -158,6 +159,11 @@ td {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 0.3s;
+}
+
+.cluster-link-box:hover .cluster-link-img-wrap img {
+  transform: scale(1.1);
 }
 
 /*QA*/
