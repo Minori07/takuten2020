@@ -41,7 +41,6 @@ if (screen.width > 480) {
   $(window).on("load scroll", function () {
     //現在の位置が500px以上かつ、クラスfixedが付与されていない時
     if ($(this).scrollTop() > 20) {
-      //headerの高さ分上に設定
       //クラスfixedを付与
       $(".header-nav-list").css({ opacity: 0 });
       //位置を0に設定し、アニメーションのスピードを指定
@@ -84,11 +83,14 @@ $(function () {
       var target = $(this).data("target");
       var modal = document.getElementById(target);
       $(modal).fadeIn();
+      $("html, body").css("overflow", "hidden");
       return false;
     });
   });
   $(".modal-close").on("click", function () {
+    $("body").removeAttr("style");
     $(".js-modal").fadeOut();
+    $("html").removeAttr("style");
     return false;
   });
 
