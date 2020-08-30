@@ -43,7 +43,7 @@ header {
   display: flex;
   align-items: center;
   position: absolute;
-  z-index: 5;
+  z-index: 10;
   animation: header-first-animation 5s ease-in alternate forwards;
 }
 
@@ -181,7 +181,7 @@ header {
   bottom: 3.3vw;
   left: 1.2vw;
   width: 20%;
-  z-index: 3;
+  z-index: 7;
   animation: main-logo-animation 6s ease-in alternate forwards;
 }
 
@@ -245,11 +245,11 @@ header {
   }
   90% {
     opacity: 0;
-    z-index: 2;
+    z-index: 6;
   }
   100% {
     opacity: 1;
-    z-index: 2;
+    z-index: 6;
   }
 }
 
@@ -260,7 +260,7 @@ header {
   width: 100vw;
   height: 100vh;
   background-color: #f0ede5;
-  z-index: 1;
+  z-index: 5;
   animation: blank-animation 5s ease-in alternate forwards;
   visibility: hidden;
 }
@@ -285,7 +285,7 @@ header {
   left: 8px;
   width: 97%;
   height: 98.5%;
-  z-index: 2;
+  z-index: 6;
   /* visibility: hidden; */
 }
 
@@ -460,6 +460,39 @@ header {
     left: 100%;
   }
 }
+
+/*podcast*/
+.podcast-icon {
+  position: fixed;
+  top: 80vh;
+  right: 5vw;
+  width: 100px;
+  z-index: 8;
+  animation: podcast-animation 5s ease-in alternate forwards;
+}
+
+@keyframes podcast-animation {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.podcast-icon iframe {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+}
+.podcast-icon img {
+  width: 100%;
+}
+
+/*section*/
 
 section {
   width: 60vw;
@@ -662,6 +695,12 @@ section {
   width: calc(60vw + 50px);
 }
 
+.taku-list::after {
+  content: "";
+  display: block;
+  width: 30%;
+}
+
 .taku-list li {
   margin: 0 50px 80px 0;
   width: 17vw;
@@ -845,10 +884,13 @@ footer {
 
 .modal-logo-wrap {
   width: 70%;
+  height: 12vw;
 }
 
 .modal-logo-wrap img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 /* .modal-taku-caption {
   margin-left: 37%;
@@ -884,6 +926,73 @@ footer {
   /* margin-left: 25px; */
   margin-left: 5%;
 }
+
+/*link-block*/
+
+.link-block-wrap {
+  width: 80%;
+  height: 50px;
+  margin-top: 30px;
+  border: solid 1px #3e3a39;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.link-block {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  transition: all 0.1s;
+  z-index: 2;
+}
+
+.black-box {
+  background-color: #3e3a39;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.link-block-wrap:hover .link-block {
+  color: white;
+}
+
+.link-block-wrap:hover .black-box {
+  width: 100%;
+}
+
+.right {
+  width: 5px;
+  position: relative;
+  left: 35px;
+}
+
+.right-white-cover {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.link-block-wrap:hover .right-white-cover {
+  opacity: 1;
+}
+
+.right img {
+  width: 100%;
+}
+
+.go-site-attention {
+  font-size: 10px;
+}
+
+/*modal-photo*/
 
 .modal-photo-list {
   margin-top: 80px;

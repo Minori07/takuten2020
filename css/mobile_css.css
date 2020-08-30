@@ -304,6 +304,12 @@ header {
   }
 }
 
+.podcast-icon {
+  top: 87vh;
+  right: 3vw;
+  width: 80px;
+}
+
 /*section*/
 
 section {
@@ -380,6 +386,7 @@ section {
   width: 100%;
   height: 180px;
   padding: 5%;
+  margin-bottom: 40px;
 }
 
 .venue h3 {
@@ -542,6 +549,37 @@ footer {
   width: 100%;
 }
 
+/* web */
+
+.web-mainvisual-wrap {
+  position: relative;
+  top: 80px;
+}
+
+.exhibition-web {
+  margin-top: 130px;
+  display: block;
+  padding-bottom: 40px;
+}
+
+.web-caption {
+  margin: 0;
+  width: 100%;
+}
+
+.site-list li {
+  width: 120px;
+  margin: 10px 0 10px;
+}
+.site-list img {
+  height: auto;
+}
+
+.site-list p {
+  font-size: 10px;
+  margin: 10px 0;
+}
+
 /*modal*/
 
 .modal-content {
@@ -587,6 +625,13 @@ footer {
 .modal-taku-name p {
   font-size: 12px;
   margin-left: 15px;
+}
+
+.modal-left-fixed .link-block-wrap {
+  margin: 30px auto 10px;
+}
+.go-site-attention {
+  text-align: center;
 }
 
 .modal-photo-list {

@@ -152,6 +152,7 @@ if (!sessionStorage.getItem(keyName)) {
   $("header").css({ animation: "none" });
   $(".top-blank").css({ animation: "none" });
   $(".main-visual-logo-wrap").css({ animation: "none" });
+  $(".podcast-icon").css({ animation: "none" });
 }
 
 // var greet = document.getElementById("greet");
