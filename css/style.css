@@ -481,14 +481,6 @@ header {
   }
 }
 
-.podcast-icon iframe {
-  width: 90%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
 @keyframes podcast-moji-animation {
   0%,
   90% {
