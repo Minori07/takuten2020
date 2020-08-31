@@ -152,7 +152,8 @@ if (!sessionStorage.getItem(keyName)) {
   $("header").css({ animation: "none" });
   $(".top-blank").css({ animation: "none" });
   $(".main-visual-logo-wrap").css({ animation: "none" });
-  $(".podcast-icon").css({ animation: "none" });
+  $(".podcast-icon").css({ "animation-delay": "-3s" });
+  $(".podcast-moji").css({ "animation-delay": "-3s" });
 }
 
 // var greet = document.getElementById("greet");

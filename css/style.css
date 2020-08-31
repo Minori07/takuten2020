@@ -466,15 +466,13 @@ header {
   position: fixed;
   top: 80vh;
   right: 5vw;
-  width: 100px;
+  width: 110px;
   z-index: 8;
-  animation: podcast-animation 5s ease-in alternate forwards;
+  animation: podcast-animation 5.5s ease;
 }
 
 @keyframes podcast-animation {
-  0% {
-    opacity: 0;
-  }
+  0%,
   90% {
     opacity: 0;
   }
@@ -484,12 +482,35 @@ header {
 }
 
 .podcast-icon iframe {
-  width: 100%;
+  width: 90%;
   position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
 }
+
+@keyframes podcast-moji-animation {
+  0%,
+  90% {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
 .podcast-icon img {
+  position: absolute;
+  top: 0;
   width: 100%;
+}
+
+.podcast-moji {
+  left: 2%;
+  animation-delay: 5s;
+  animation: podcast-moji-animation 5.5s ease;
 }
 
 /*section*/
@@ -866,10 +887,13 @@ footer {
 }
 
 .modal-left-fixed {
-  position: fixed;
+  /* position: fixed;
   top: 250px;
-  left: 20%;
-  width: 22%;
+  left: 20%; */
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 25%;
   font-size: 12px;
   letter-spacing: 0.05em;
   line-height: 24px;
@@ -990,6 +1014,7 @@ footer {
 
 .go-site-attention {
   font-size: 10px;
+  margin-bottom: 20px;
 }
 
 /*modal-photo*/
