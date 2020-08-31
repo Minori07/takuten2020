@@ -815,6 +815,10 @@ section {
   opacity: 1;
 }
 
+.others .section-heading {
+  margin-bottom: 20px;
+}
+
 .others-contents p {
   font-size: 13px;
 }
