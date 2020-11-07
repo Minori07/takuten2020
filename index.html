@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-174896040-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-174896040-1");
+    </script>
     <!-- 文字コード設定 -->
     <meta charset="UTF-8" />
 
@@ -21,6 +35,12 @@
     <meta property="og:title" content="卓展2020" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="卓展2020" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon-180x180.png"
+    />
 
     <!-- css読み込み -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -37,23 +57,7 @@
     ></script>
     <script src="./lib/three.min.js"></script>
   </head>
-
   <body>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-174896040-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-174896040-1");
-    </script>
-
     <div id="canvas-container"></div>
 
     <header>
@@ -394,11 +398,47 @@
       </div>
       <ul class="info-contents">
         <li>
+          <p class="info-date">2020.09.27</p>
+          <p>
+            卓展2020 エンディングセレモニー「
+            <a
+              target="_blank"
+              href="https://cluster.mu/e/7d944cd4-6f52-4000-b0e4-ac336a48972c"
+              >閉幕の儀</a
+            >
+            」開催！
+          </p>
+        </li>
+        <li>
+          <p class="info-date">2020.09.19</p>
+          <p>
+            卓展2020 ポップアップストア「<a
+              target="_blank"
+              href="https://suzuri.jp/takuten_geikou"
+              >卓商店</a
+            >」オープン！
+          </p>
+        </li>
+        <li>
+          <p class="info-date">2020.09.19</p>
+          <p>
+            名古屋市立大学芸術工学部の教員によるデザインカンファレンス「<a
+              target="_blank"
+              href="https://youtu.be/qjnRBMKsGrY"
+              >GEIKO Conference</a
+            >」開催！
+          </p>
+        </li>
+        <li>
+          <p class="info-date">2020.09.01</p>
+          <p>「web会場」「バーチャル会場」にて作品公開！</p>
+        </li>
+        <li>
           <p class="info-date">2020.09.01</p>
           <p>
             卓展2020 オープニングセレモニー「
             <a
-              target="blank"
+              target="_blank"
               href="https://cluster.mu/e/feeebdd0-b382-43e8-ac87-e43f35e5feed"
               >開幕の儀</a
             >
@@ -469,10 +509,10 @@
         <h5>EXHIBITION</h5>
         <h2>展示会場</h2>
       </div>
-      <div class="exhibition-atention">
+      <!-- <div class="exhibition-atention">
         ※現段階では作品の展示は行われていません。<br />
         web会場・cluster内での各卓の作品の展示は9/1(火)より始まります。
-      </div>
+      </div> -->
       <ul class="venue">
         <li class="venue-hover">
           <a href="web.html">
@@ -494,7 +534,7 @@
         </li>
         <li class="venue-hover">
           <a href="cluster.html">
-            <h3>cluster 会場</h3>
+            <h3>バーチャル 会場</h3>
             <div class="venue-img-wrap">
               <img src="images/cluster.svg" alt="cluster会場のピクトグラム" />
               <div class="venue-img-cover-wrap">
@@ -772,11 +812,50 @@
       <div class="others-contents">
         <p>学内外誰でも参加できます</p>
         <a
-          target="blank"
+          target="_blank"
           href="https://cluster.mu/e/feeebdd0-b382-43e8-ac87-e43f35e5feed"
         >
           <div class="banner-wrap">
             <img src="images/cluster-banner.png" alt="バナーイラスト" />
+          </div>
+        </a>
+      </div>
+      <div class="section-heading">
+        <h5>OTHERS</h5>
+        <h2>GEIKO Conference</h2>
+      </div>
+      <div class="others-contents">
+        <p>学内外誰でも参加できます</p>
+        <a target="_blank" href="https://youtu.be/qjnRBMKsGrY">
+          <div class="banner-wrap">
+            <img src="images/geiko-conf-banner.png" alt="バナーイラスト" />
+          </div>
+        </a>
+      </div>
+      <div class="section-heading">
+        <h5>OTHERS</h5>
+        <h2>卓商店</h2>
+      </div>
+      <div class="others-contents">
+        <p>期間限定でグッズ販売中！いっぱい買って！</p>
+        <a target="_blank" href="https://suzuri.jp/takuten_geikou">
+          <div class="banner-wrap">
+            <img src="images/shoten-banner.png" alt="バナーイラスト" />
+          </div>
+        </a>
+      </div>
+      <div class="section-heading">
+        <h5>OTHERS</h5>
+        <h2>エンディングセレモニー「閉幕の儀」</h2>
+      </div>
+      <div class="others-contents">
+        <p>学内外誰でも参加できます</p>
+        <a
+          target="_blank"
+          href="https://cluster.mu/e/7d944cd4-6f52-4000-b0e4-ac336a48972c"
+        >
+          <div class="banner-wrap">
+            <img src="images/heimaku-banner.jpg" alt="バナーイラスト" />
           </div>
         </a>
       </div>
@@ -860,7 +939,7 @@
             それぞれが自由な発想で作品を作っています。
           </p>
           <a
-            target="blank"
+            target="_blank"
             class="link-block-wrap"
             href="https://kaedechikakiyo.github.io/cocochi/"
           >
@@ -931,7 +1010,7 @@
             co:Deは「楽しくコードを書く」をコンセプトとし、WebサイトやWebアプリを制作する卓です。
             企画、デザイン、コーディングのweb制作に置ける一連の流れを学びながら、作品の完成を目指します。
           </p>
-          <a target="blank" class="link-block-wrap" href="./code/">
+          <a target="_blank" class="link-block-wrap" href="./code/">
             <div class="black-box"></div>
             <div class="link-block">
               サイトを見る
@@ -979,9 +1058,9 @@
             設定した課題に対してブランディング,空間デザイン,UI/UXデザインなどの様々なアプローチで、解決策を提案していきます。
           </p>
           <a
-            target="blank"
+            target="_blank"
             class="link-block-wrap"
-            href="https://ditox-uxdesign.studio.design/top"
+            href="https://ditox-uxdesign.studio.site/top"
           >
             <div class="black-box"></div>
             <div class="link-block">
@@ -1033,9 +1112,9 @@
             授業だけでは身につける事の難しいモデリングの基本からアニメーションの作り方、ゲームの書き出しまで一貫したワークフローを学習します。
           </p>
           <a
-            target="blank"
+            target="_blank"
             class="link-block-wrap"
-            href="https://forma2020.studio.design"
+            href="https://forma2020.studio.site"
           >
             <div class="black-box"></div>
             <div class="link-block">
@@ -1090,9 +1169,9 @@
             考察した先の未来を生きる使い手にとっての新しい価値を提案します。
           </p>
           <a
-            target="blank"
+            target="_blank"
             class="link-block-wrap"
-            href="https://zingido-taigideatta.studio.design/page"
+            href="https://zingido-taigideatta.studio.site/page"
           >
             <div class="black-box"></div>
             <div class="link-block">
@@ -1144,9 +1223,9 @@
             カーデザインの一連の流れを学ぶことで、表現力の向上を目指します。
           </p>
           <a
-            target="blank"
+            target="_blank"
             class="link-block-wrap"
-            href="https://takuten2020-luota.studio.design"
+            href="https://takuten2020-luota.studio.site"
           >
             <div class="black-box"></div>
             <div class="link-block">
@@ -1195,9 +1274,9 @@
             madoはプロダクトデザインを学ぶ卓で、コンセプトワークに力を入れて活動しています。ユーザーの生活を彩る、ストーリー性のある提案を目指して作品作りを進めています。
           </p>
           <a
-            target="blank"
+            target="_blank"
             class="link-block-wrap"
-            href="https://mado-takuten2020.studio.design/"
+            href="https://mado-takuten2020.studio.site/"
           >
             <div class="black-box"></div>
             <div class="link-block">
@@ -1250,9 +1329,9 @@
             空間の利用方法の考案から空間設計、家具設計まで行い、より利用者の目線に立った過ごしやすい空間を提案します。
           </p>
           <a
-            target="blank"
+            target="_blank"
             class="link-block-wrap"
-            href="https://monotoma.studio.design/"
+            href="https://monotoma.studio.site/"
           >
             <div class="black-box"></div>
             <div class="link-block">
@@ -1303,7 +1382,7 @@
             SoundCloudなど）を用いて世界中に公開していきます。
           </p>
           <a
-            target="blank"
+            target="_blank"
             class="link-block-wrap"
             href="https://ottgang.netlify.app/"
           >
@@ -1359,9 +1438,9 @@
             なぜブランディングするのか？を念頭に置いて考え、伝えたいことを形にする過程を大切にしています。
           </p>
           <a
-            target="blank"
+            target="_blank"
             class="link-block-wrap"
-            href="https://shirayuri-brandlab.studio.design"
+            href="https://shirayuri-brandlab.studio.site"
           >
             <div class="black-box"></div>
             <div class="link-block">
@@ -1415,9 +1494,9 @@
             私たちの作品を、ぜひご覧ください
           </p>
           <a
-            target="blank"
+            target="_blank"
             class="link-block-wrap"
-            href="https://takuten2020phi.studio.design"
+            href="https://takuten2020phi.studio.site"
           >
             <div class="black-box"></div>
             <div class="link-block">

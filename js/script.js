@@ -1,3 +1,10 @@
+$(document).ready(function () {
+  $(".cluster-img-slider").bxSlider({
+    auto: true,
+    pause: 3000,
+  });
+});
+
 $(function () {
   var style = '<link rel="stylesheet" href="./css/style.css">';
   var mstyle = '<link rel="stylesheet" href="./css/mobile_css.css">';

@@ -1,36 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- 文字コード設定 -->
-    <meta charset="UTF-8" />
-
-    <!-- いろんなデバイス幅で表示崩れが起きないようにするやつ -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- ページタイトル -->
-    <title>卓展2020 クラスター会場</title>
-
-    <!-- ページ情報 -->
-    <meta name="description" content="卓展2020　cluster展示会場の詳細" />
-    <meta name="keywords" content="卓展,卓展2020,cluster" />
-
-    <!-- css読み込み -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/cluster.css" />
-    <link
-      rel="stylesheet"
-      media="(max-width: 480px)"
-      href="./css/mobile_css.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      async
-      src="https://platform.twitter.com/widgets.js"
-      charset="utf-8"
-    ></script>
-  </head>
-
-  <body>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -45,7 +15,48 @@
 
       gtag("config", "UA-174896040-1");
     </script>
+    <!-- 文字コード設定 -->
+    <meta charset="UTF-8" />
 
+    <!-- いろんなデバイス幅で表示崩れが起きないようにするやつ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ページタイトル -->
+    <title>卓展2020 クラスター会場</title>
+
+    <!-- ページ情報 -->
+    <meta name="description" content="卓展2020　cluster展示会場の詳細" />
+    <meta name="keywords" content="卓展,卓展2020,cluster" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon-180x180.png"
+    />
+    　
+
+    <!-- css読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cluster.css" />
+    <link
+      rel="stylesheet"
+      media="(max-width: 480px)"
+      href="./css/mobile_css.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+  </head>
+
+  <body>
     <header>
       <a href="index.html">
         <div class="logo-img-wrap">
@@ -148,7 +159,7 @@
     <section class="exhibition-cluster">
       <div class="section-heading">
         <h5>EXHIBITION</h5>
-        <h2>cluster会場</h2>
+        <h2>バーチャル会場</h2>
         <p>
           pre-open 8/12 Wed. <br />
           open 9/1 Tue.
@@ -163,10 +174,10 @@
           インストールする必要があります。詳しくは下記参加方法をご覧ください。
           <br />
         </p>
-        <div class="cluster-atention">
+        <!-- <div class="cluster-atention">
           ※現段階では作品の展示は行われていません。 <br />
           cluster内での各卓の作品の展示は9/1(火)より始まります。
-        </div>
+        </div> -->
       </div>
     </section>
     <section class="cluster-join">
@@ -194,7 +205,7 @@
               <td>
                 <div class="iphone-download">
                   <a
-                    target="blank"
+                    target="_blank"
                     href="https://apps.apple.com/app/id1490075175?mt=8&l=ja"
                   >
                     <img
@@ -203,7 +214,7 @@
                     />
                   </a>
                   <a
-                    target="blank"
+                    target="_blank"
                     href="https://play.google.com/store/apps/details?id=mu.cluster.app"
                   >
                     <img
@@ -215,7 +226,7 @@
                 </div>
               </td>
               <td>
-                <a target="blank" href="https://cluster.mu/downloads">
+                <a target="_blank" href="https://cluster.mu/downloads">
                   <div class="download-button">
                     <img src="images/pc-downloads.svg" alt="" />
                   </div>
@@ -230,7 +241,7 @@
             </div>
             <div class="mobile-download-button">
               <a
-                target="blank"
+                target="_blank"
                 href="https://apps.apple.com/app/id1490075175?mt=8&l=ja"
               >
                 <img
@@ -239,7 +250,7 @@
                 />
               </a>
               <a
-                target="blank"
+                target="_blank"
                 href="https://play.google.com/store/apps/details?id=mu.cluster.app"
               >
                 <img
@@ -260,7 +271,7 @@
             </p>
           </div>
           <a
-            target="blank"
+            target="_blank"
             href="https://cluster.mu/w/6c3f47f8-2713-4c9c-9ae0-9270ffe4fb55"
             class="cluster-link-box"
           >
@@ -276,6 +287,18 @@
         </li>
       </ul>
     </section>
+
+    <div class="cluster-img-slider">
+      <img src="images/cluster1.jpg" alt="クラスター展示画像" />
+      <img src="images/cluster2.jpg" alt="クラスター展示画像" />
+      <img src="images/cluster3.jpg" alt="クラスター展示画像" />
+      <img src="images/cluster4.jpg" alt="クラスター展示画像" />
+      <img src="images/cluster5.jpg" alt="クラスター展示画像" />
+      <img src="images/cluster6.jpg" alt="クラスター展示画像" />
+      <img src="images/cluster7.jpg" alt="クラスター展示画像" />
+      <img src="images/cluster8.jpg" alt="クラスター展示画像" />
+    </div>
+
     <footer>
       <div class="footer-logo-img-wrap">
         <img src="images/main-logo.svg" alt="卓展ロゴ" />

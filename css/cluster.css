@@ -171,6 +171,29 @@ td {
   transform: scale(1.1);
 }
 
+.cluster-join {
+  margin-bottom: 100px;
+}
+
+.bx-wrapper {
+  width: 60vw;
+  margin: 0 auto 130px;
+  box-shadow: none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  width: 7px;
+  height: 7px;
+  background: white;
+  border: solid 1px #3e3a39;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #3e3a39;
+}
+
 /*QA*/
 
 .zoomQA-mainvisual-wrap {

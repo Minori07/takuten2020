@@ -310,6 +310,13 @@ header {
   width: 80px;
 }
 
+_::-webkit-full-page-media,
+_:future,
+:root .podcast-icon {
+  top: 63vh;
+  right: 1vw;
+}
+
 /*section*/
 
 section {
@@ -535,6 +542,13 @@ footer {
   width: 35%;
 }
 
+.bx-wrapper {
+  width: 75%;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  transform: scale(0.6);
+}
 /*QA*/
 
 .zoomQA-mainvisual-wrap {
